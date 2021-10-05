@@ -11,7 +11,17 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+ mix.sass("resources/scss/main.scss", "public/css").options({
+    autoprefixer: {
+        options: {
+            browsers: ["last 6 versions"],
+        },
+    },
+})
+
+mix.browserSync({
+    proxy: "http://127.0.0.1:8000",
+});
+
+mix.ts('resources/ts/app.ts', 'public/js');
+// mix.js('resources/js/app.js', 'public/js');
