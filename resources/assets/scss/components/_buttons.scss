@@ -11,7 +11,124 @@
     vertical-align: middle;
     background: get-color(default-state, base);
     color: get-color(default-state, dark);
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
         box-shadow 0.15s ease-in-out;
+
+    &.btn--link {
+        &:hover {
+            color: #0a58ca;
+            text-decoration: underline;
+        }
+    }
+
+    &.btn--primary {
+        color: get-color(default-state, plain-white);
+        background: get-color(default-state, primary);
+        border: 1px solid get-color(default-state, primary);
+
+        &:hover {
+            color: get-color(hover-state, plain-white);
+            background: get-color(hover-state, primary);
+            border: 1px solid get-color(hover-state, primary);
+        }
+    }
+
+    &.btn--secondary {
+        color: get-color(default-state, plain-white);
+        background: get-color(default-state, secondary);
+        border: 1px solid get-color(default-state, secondary);
+
+        &:hover {
+            color: get-color(hover-state, plain-white);
+            background: get-color(hover-state, secondary);
+            border: 1px solid get-color(hover-state, secondary);
+        }
+    }
+
+    &.btn--success {
+        color: get-color(default-state, plain-white);
+        background: get-color(default-state, success);
+        border: 1px solid get-color(default-state, success);
+
+        &:hover {
+            color: get-color(hover-state, plain-white);
+            background: get-color(hover-state, success);
+            border: 1px solid get-color(hover-state, success);
+        }
+    }
+
+    &.btn--success {
+        color: get-color(default-state, plain-white);
+        background: get-color(default-state, success);
+        border: 1px solid get-color(default-state, success);
+
+        &:hover {
+            color: get-color(hover-state, plain-white);
+            background: get-color(hover-state, success);
+            border: 1px solid get-color(hover-state, success);
+        }
+    }
+
+    &.btn--error {
+        color: get-color(default-state, plain-white);
+        background: get-color(default-state, error);
+        border: 1px solid get-color(default-state, error);
+
+        &:hover {
+            color: get-color(hover-state, plain-white);
+            background: get-color(hover-state, error);
+            border: 1px solid get-color(hover-state, error);
+        }
+    }
+
+    &.btn--warning {
+        color: get-color(default-state, plain-dark);
+        background: get-color(default-state, warning);
+        border: 1px solid get-color(default-state, warning);
+
+        &:hover {
+            color: get-color(hover-state, plain-dark);
+            background: get-color(hover-state, warning);
+            border: 1px solid get-color(hover-state, warning);
+        }
+    }
+
+    &.btn--info {
+        color: get-color(default-state, plain-dark);
+        background: get-color(default-state, info);
+        border: 1px solid get-color(default-state, info);
+
+        &:hover {
+            color: get-color(hover-state, plain-dark);
+            background: get-color(hover-state, info);
+            border: 1px solid get-color(hover-state, info);
+        }
+    }
+
+    &.btn--dark {
+        color: get-color(default-state, plain-white);
+        background: get-color(default-state, dark);
+        border: 1px solid get-color(default-state, dark);
+
+        &:hover {
+            color: get-color(hover-state, plain-white);
+            background: get-color(hover-state, dark);
+            border: 1px solid get-color(hover-state, dark);
+        }
+    }
+
+    &.btn--light {
+        color: get-color(default-state, plain-dark);
+        background: get-color(default-state, light);
+        border: 1px solid get-color(default-state, light);
+
+        &:hover {
+            color: get-color(hover-state, plain-dark);
+            background: get-color(hover-state, light);
+            border: 1px solid get-color(hover-state, light);
+        }
+    }
 }
