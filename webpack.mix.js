@@ -5,7 +5,7 @@ mix.inProduction() ? serveProductionMode() : serveDevelopmentMode();
 
 function serveDevelopmentMode() {
     mix.
-        sass("resources/scss/main.scss", "public/css").options({
+        sass("resources/assets/scss/main.scss", "public/css").options({
             postCss: [
                 require('postcss-custom-properties')({
                     preserve: false
@@ -18,7 +18,7 @@ function serveDevelopmentMode() {
                     ]
                 }
             },
-        }).ts('resources/ts/app.ts', 'public/js');
+        }).ts('resources/assets/ts/app.ts', 'public/js');
 
     mix.browserSync({
         proxy: "http://127.0.0.1:8000",
@@ -26,7 +26,7 @@ function serveDevelopmentMode() {
 }
 
 function serveProductionMode() {
-    mix.sass("resources/scss/main.scss", "public/css").options({
+    mix.sass("resources/assets/scss/main.scss", "public/css").options({
         processCssUrls: false,
         terser: {},
         purifyCss: false,
@@ -47,5 +47,5 @@ function serveProductionMode() {
                 ]
             }
         },
-    }).ts('resources/ts/app.ts', 'public/js').version();
+    }).ts('resources/assets/ts/app.ts', 'public/js').version();
 }

@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    max-width: 50%;
+    margin: auto;
+
+    * {
+        text-decoration: none;
+    }
+
+    .navbar__login {
+        margin-left: auto;
+    }
+
+    .navbar__sign-up {
+    }
+}

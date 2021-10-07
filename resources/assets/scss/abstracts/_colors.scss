@@ -1,0 +1,24 @@
+$colors: (
+    default-state: (
+        "primary": #3b82f6,
+        "secondary": #6366f1,
+        "success": #10b981,
+        "error": #ef4444,
+        "warning": #f59e0b,
+        "info": #ec4899,
+        "dark": #374151,
+        "light": #e5e7eb,
+        "base": transparent,
+    ),
+    hover-state: (
+        "primary": #2563eb,
+        "secondary": #4f46e5,
+        "success": #059669,
+        "error": #dc2626,
+        "warning": #d97706,
+        "info": #db2777,
+        "dark": #1f2937,
+        "light": #e5e7eb,
+        "base": transparent,
+    ),
+);

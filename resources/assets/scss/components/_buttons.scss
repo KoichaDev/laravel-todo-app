@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+.btn {
+    display: inline-block;
+    padding: 0.375em 0.75em;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    background: get-color(default-state, base);
+    color: get-color(default-state, dark);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+}
