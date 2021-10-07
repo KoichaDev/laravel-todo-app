@@ -3,7 +3,6 @@ const mix = require('laravel-mix');
 // Enable the long-term caching which enables file hashing that Laravel Mix provides.
 mix.inProduction() ? serveProductionMode() : serveDevelopmentMode();
 
-
 function serveDevelopmentMode() {
     mix.
         sass("resources/scss/main.scss", "public/css").options({
