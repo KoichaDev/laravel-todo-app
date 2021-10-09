@@ -1,0 +1,36 @@
+@import "./../abstracts/" as *;
+
+.home-page {
+    max-width: 65%;
+    margin: auto;
+
+    .home-page__landing-page1 {
+        margin: auto;
+
+        @media (min-width: 90em) {
+            max-width: 90%;
+        }
+
+        .home-page__landing-page-sub-container {
+            display: grid;
+            grid-template-columns: 1.25fr 0.25fr;
+            grid-template-areas: "article image";
+
+            .home-page__landing-page2-article {
+                grid-area: article;
+                width: 80%;
+
+                span {
+                    color: get-color(default-state, primary);
+                }
+            }
+
+            .home-page__landing-page2-image {
+                grid-area: image;
+                margin-top: 1.25em;
+                width: 450px;
+                height: 350px;
+            }
+        }
+    }
+}

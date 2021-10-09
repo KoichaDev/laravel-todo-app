@@ -6,6 +6,10 @@
     margin: auto;
     padding: 2em 0;
 
+    @media (min-width: 95em) {
+        min-width: 50%;
+    }
+
     * {
         font-size: 1rem;
         text-decoration: none;
