@@ -1,0 +1,28 @@
+@use "./../../abstracts/" as content;
+
+.register-page {
+    @include content.center-container;
+    max-width: 80%;
+    margin: auto;
+
+    .register-page__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        * {
+            display: block;
+        }
+
+        label {
+            width: 100%;
+        }
+
+        input {
+            width: 97.5%;
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+}
